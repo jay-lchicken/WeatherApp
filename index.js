@@ -1,7 +1,7 @@
 document.getElementById("submit").onclick = () => {
     const city = document.getElementById("city").value;
     const apiKey = '5594cfe3026a44d6abb123240240210';
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
     fetch(url)
         .then(response => response.json())
